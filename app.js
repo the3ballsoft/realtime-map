@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var port = Number(process.env.PORT || 5000);
 
 app.use('/static', express.static('public'));
 
@@ -55,6 +56,6 @@ io.on('connection', function(socket){
     });
 });
 
-http.listen(3000, function(){
+http.listen(port, function(){
   console.log('Escuchando en  *:3000');
 });
