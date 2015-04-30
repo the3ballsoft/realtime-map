@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Realtime map</title>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css" media="screen">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+  </head>
+  <body>
+
+  <div id="map-canvas"></div>
+  <section id="main">
+    <form id="loginForm" action="">
+      <label for="">Nombre de usuario</label>
+      <input type="text" id="username">  
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/js/vendor/jquery-min.js"></script>
+    <script src="/static/js/vendor/ejs_production.js"></script>
+
+    <script src="/static/js/realtime_map.js"></script>
+    <!--
+       -<script type="text/javascript" charset="utf-8">
+       -  google.maps.event.addDomListener(window, 'load', initialize);
+       -</script>
+       -->
+  </body>
+  </html>
