@@ -73,7 +73,7 @@ function addMarkers(users){
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content: '<div><h1>'+ users[i].username +'</h1></div>'
+      content: '<div><strong>'+ users[i].username +'</strong></div>'
     });
 
     markers.push(marker);
